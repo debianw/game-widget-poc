@@ -5,6 +5,9 @@ import { GameProvider, GameContext } from '../components/GameContext'
 import { getGameId } from '../helpers'
 
 //
+const GAME_KEY = 'backgammon'
+
+//
 const GameWrapper = () => {
   const { Game, loading, isAvailable } = useContext(GameContext)
   const [ gameId, setGameId ] = useState(0)
@@ -24,7 +27,7 @@ const GameWrapper = () => {
 
 //
 const withGameProvider = (props) => (
-  <GameProvider keyname="backgammon">
+  <GameProvider keyname={GAME_KEY}>
     <GameWrapper {...props} /> 
 
     <Link href="/">

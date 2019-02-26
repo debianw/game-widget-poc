@@ -3,6 +3,8 @@
 ## Rendering Game in a Page
 
 ```
+const GAME_KEY = 'backgammon'
+
 //
 import React, { useContext, useEffect, useState } from 'react'
 import { GameProvider, GameContext } from '../components/GameContext'
@@ -28,10 +30,13 @@ const GameWrapper = () => {
 
 //
 const withGameProvider = (props) => (
-  <GameProvider keyname="backgammon">
+  <GameProvider keyname={GAME_KEY}>
     <GameWrapper {...props} /> 
   </GameProvider>
 )
 
 //
 export default withGameProvider
+```
+
+For more details take a look to `./web/pages/game`
