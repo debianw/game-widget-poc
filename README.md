@@ -1,5 +1,26 @@
 # Widget for NextJs PoC
 
+## Setup
+
+### Step 1
+
+```
+npm install
+npm run build:game
+```
+
+### Step 2 (start CDN server)
+```
+npm run start:game
+```
+
+### Step 3 (start WEB project)
+```
+cd ./web
+npm install
+npm run dev
+```
+
 ## Rendering Game in a Page
 
 ```
