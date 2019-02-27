@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build:game": "webpack --config ./backgammon/config/webpack.config.base.js",
-    "start:game": "node ./backgammon/server",
+    "start:game": "cd ./backgammon/server && node index.js",
+    "start:web": "cd ./web && node server.js",
+    "install:game-server": "cd ./backgammon/server && npm install",
+    "install:web-server": "cd ./web && npm install",
+    "postinstall": "npm run install:game-server && npm run install:web-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -32,9 +36,6 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "lodash": "^4.17.11",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   }

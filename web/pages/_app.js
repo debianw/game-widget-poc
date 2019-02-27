@@ -1,6 +1,7 @@
 //
 import React from 'react'
 import App, { Container } from 'next/app'
+import Head from 'next/head'
 import { isServer } from '../helpers'
 
 //
@@ -28,6 +29,9 @@ class GambitApp extends App {
     return (
       <Container>
         <Component {...pageProps} />
+        <Head>
+          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+        </Head>
       </Container>
     )
   }

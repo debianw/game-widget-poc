@@ -1,6 +1,6 @@
 const express = require('express')
 const next = require('next')
-const cors = require('cors')
+const compression = require('compression')
 
 const port = parseInt(process.env.PORT, 10) || 5002
 const dev = process.env.NODE_ENV !== 'production'
@@ -10,7 +10,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const server = express()
 
-  server.use(cors())
+  server.use(compression())
 
   server.get('*', (req, res) => {
     return handle(req, res)

@@ -5,8 +5,7 @@
 ### Step 1
 
 ```
-npm install
-npm run build:game
+npm install && npm run build:game
 ```
 
 ### Step 2 (start CDN server)
@@ -16,10 +15,11 @@ npm run start:game
 
 ### Step 3 (start WEB project)
 ```
-cd ./web
-npm install
-npm run dev
+npm run start:web
 ```
+
+### Step 4
+Open `http://localhost:5002` in your browser 
 
 ## Rendering Game in a Page
 

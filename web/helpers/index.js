@@ -17,7 +17,7 @@ export const createWaitFor = (options = {}) => {
     if (count >= retries) return callback(null)
 
     timeId = setTimeout(() => {
-      // console.log(`wait for ${varName} | count: ${count}`)
+      console.log(`wait for ${varName} | count: ${count}`)
       waitFor(varName, callback)
       count += 1
     }, 300)
