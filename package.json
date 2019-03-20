@@ -4,39 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:game": "webpack --config ./backgammon/config/webpack.config.base.js",
-    "start:game": "cd ./backgammon/server && node index.js",
     "start:web": "cd ./web && node server.js",
-    "install:game-server": "cd ./backgammon/server && npm install",
     "install:web-server": "cd ./web && npm install",
-    "postinstall": "npm run install:game-server && npm run install:web-server",
+    "postinstall": "npm run install:web-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.3",
-    "@babel/plugin-proposal-class-properties": "^7.3.3",
-    "@babel/plugin-proposal-export-default-from": "^7.2.0",
-    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
-    "@babel/plugin-proposal-json-strings": "^7.2.0",
-    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-syntax-import-meta": "^7.2.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.0",
-    "html-loader": "^0.5.5",
-    "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
-    "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
-  },
-  "dependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }

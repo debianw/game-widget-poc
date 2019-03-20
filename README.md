@@ -2,19 +2,9 @@
 
 ## Setup
 
-### Step 1
-
+### Step 1 (start WEB project)
 ```
-npm install && npm run build:game
-```
-
-### Step 2 (start CDN server)
-```
-npm run start:game
-```
-
-### Step 3 (start WEB project)
-```
+npm install
 npm run start:web
 ```
 

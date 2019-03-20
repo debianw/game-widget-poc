@@ -6,7 +6,8 @@ import {
   createWaitFor
 } from '../helpers'
 
-const cdnServer = 'http://localhost:5001'
+// const cdnServer = 'http://localhost:5001'
+const cdnServer = 'https://cdn.gambit.com/games/development/example'
 
 //
 export const GameContext = createContext({})

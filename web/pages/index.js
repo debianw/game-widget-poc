@@ -8,8 +8,8 @@ const Home = () => (
 
     <ul>
       <li>
-        <Link href="/game?id=2">
-          <a>Backgammon</a>
+        <Link href="/game?id=2&p=waly">
+          <a>Example</a>
         </Link>
       </li>
     </ul>

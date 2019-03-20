@@ -5,7 +5,7 @@ import { GameProvider, GameContext } from '../components/GameContext'
 import { getGameId } from '../helpers'
 
 //
-const GAME_KEY = 'backgammon'
+const GAME_KEY = 'example.gambit'
 
 //
 const GameWrapper = () => {
